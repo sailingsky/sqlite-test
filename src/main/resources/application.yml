@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sqlite-test
+  datasource:
+    url: jdbc:sqlite:src/main/resources/db/test.db
+    driver-class-name: org.sqlite.JDBC
+
+server:
+  port: 8083
+  max-http-request-header-size: 4MB
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
